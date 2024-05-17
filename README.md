@@ -18,7 +18,16 @@ use "git checkout" to see the previous made changes
 use "git branch" to make extra leadways
 "git checkout -b 'name' " to create a new branch
 
+to use git diff you gotta have 2 same files in 2 different branches
+simply use "git diff "file name" "file name"
+well you can use diff on 1 file and 1 branch 
+1) change something in the branch but dont save it 
+later use "git diff 'file name' " to see what is changed
+2) change something in the branch and save it with "git add ."
+then use "git diff --staged 'file name' " to see what is changed
+
 "git push origin 'name' " to push the branch to github site
 
 now on to pulling them from github
-"git pull origin master"
+"git pull origin 'branch name' "
+
